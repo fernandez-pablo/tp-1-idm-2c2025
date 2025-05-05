@@ -1,0 +1,327 @@
+/*  RESETEO MI CSS*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    padding-top: 60px;
+    font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main, .encabezado, nav {
+    max-width: 1200px;
+    margin: auto;
+    
+    background-color: #5f8de894;
+}
+
+/*FORMULARIO*/
+form {
+    width: 100%;
+
+}
+fieldset {
+    margin: 1rem;
+}
+fieldset span {
+    display: block;
+    width: 100%;
+    padding: 3px;
+
+}
+textarea {
+    resize: none;
+    width: 100%;
+    height: 6em;
+}
+
+.contenedorenviar input:hover {
+    background-color: rgb(189, 217, 228);
+}
+p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    
+}
+
+
+h1, h2, a {
+    font-family: "Tagesschrift",Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.encabezado {
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #20448C;
+    color: #ffffff;
+    
+}
+
+.encabezado > header {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+nav{
+    margin-top: 0.8rem;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li, input {
+    padding: 1rem;
+    text-align: center;
+    background-color: #F2B544;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #20448C;
+}
+
+nav li:hover {
+    background-color: #e7e2c2;
+}
+
+
+section{
+    margin: 2rem 0;
+    padding: 2rem 0;
+    background-color: #FFAAF396;
+    border: thin solid transparent;
+}
+
+#personajes {
+    background-color: antiquewhite;
+}
+
+
+footer, .contenedorenviar {
+    text-align: center;
+
+}
+
+.marco img, .introposter img, .colum-img img{
+    margin: auto;
+    border-radius: 50%;
+}
+
+.headerbanner, .headerlogo {
+    display: none;
+}
+
+
+.introtexto {
+    
+    padding: 0 0.8rem;
+}
+
+/*CARACTERISTICAS*/
+
+.video iframe{
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/*personajes*/
+
+.personaje_contenedor, .galeria_contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+.personaje_card {
+    border-top: solid gold 2px;
+    border-bottom: solid gold 2px;
+    background-color: #5f8de894;
+
+
+    margin-bottom:  1rem;
+}
+
+.personaje_card h3, .actor {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.personaje_card p{
+    padding: 0 0.8rem;
+}
+
+.personaje_card img {
+    border-top: solid gold 2px;
+    border-bottom: solid gold 2px;
+    margin: auto;
+}
+
+.actor{
+    font-size: 0.8rem;
+    background-color: #E19E9E;
+
+}
+
+fieldset input {
+    width: 100%;
+}
+
+/* ################TABLET#################33*/
+
+@media screen and (min-width:576px) {
+
+    body {
+        background-color: rgb(255, 255, 255);
+        padding-top: 0;
+    }
+
+    nav ul {
+        
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    nav ul li {
+        display: inline-block;
+        min-width: 150px;
+        
+    }
+
+    
+    .headerlogo {
+        display: block;
+        
+    }
+
+    .encabezado {
+        position: unset;
+    }
+
+    .encabezado > header {
+        height: unset;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .container-intro {
+        display: flex;
+        align-items: center;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    #caracteristicas {
+        background: #d3b7eb;
+        background: linear-gradient(124deg,rgba(211, 183, 235, 1) 50%, rgba(240, 180, 180, 1) 69%);
+    }
+
+    .contenedorenviar input {
+        width: 30%;
+    }
+    
+    #intro {
+    background-color: white;
+    }
+
+    .caracteristicas {
+        columns: 2;
+        padding: 1rem;    }
+
+    .personaje_contenedor {
+        
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .personaje_card, nav ul li, .galeria_contenedor img, .colum-img img {
+        border-radius: 0.7rem;
+        box-shadow: 10px 10px 31px 5px rgba(0,0,0,0.75);
+            
+        
+    }
+
+    
+
+}
+
+/* ################DESKTOP#################33*/
+
+@media screen and (min-width:993px) {
+
+
+    .headerlogo {
+        display: none;
+           
+        
+    }
+
+    .headerbanner{
+        display: unset;
+        outline: 0.5rem solid #f5ad1c;
+        outline-offset: -12px;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: #464952;
+        padding-top: 5px;
+    }
+
+    .encabezado {
+        background-color: #D0583E;
+    }
+
+    .personaje_contenedor, .galeria_contenedor {
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+
+    .introtexto {
+        column-count: 2;
+        padding: 0 0.8rem;
+    }
+        
+}
